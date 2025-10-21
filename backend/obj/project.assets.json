@@ -3285,11 +3285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonm\\OneDrive\\Documentos\\IelChallengeApi\\IelChallengeApi.csproj",
+      "projectUniqueName": "C:\\Users\\leonm\\OneDrive\\Documentos\\Desafio-IEL-Estagio\\backend\\IelChallengeApi.csproj",
       "projectName": "IelChallengeApi",
-      "projectPath": "C:\\Users\\leonm\\OneDrive\\Documentos\\IelChallengeApi\\IelChallengeApi.csproj",
+      "projectPath": "C:\\Users\\leonm\\OneDrive\\Documentos\\Desafio-IEL-Estagio\\backend\\IelChallengeApi.csproj",
       "packagesPath": "C:\\Users\\leonm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leonm\\OneDrive\\Documentos\\IelChallengeApi\\obj\\",
+      "outputPath": "C:\\Users\\leonm\\OneDrive\\Documentos\\Desafio-IEL-Estagio\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leonm\\AppData\\Roaming\\NuGet\\NuGet.Config"
