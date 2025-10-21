@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IelChallengeApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee0b2aa3462aef0ee94fa78955dd3a84fc19a882")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45a8965910596f1b917aa1da4a0d1021a46908d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("IelChallengeApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IelChallengeApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

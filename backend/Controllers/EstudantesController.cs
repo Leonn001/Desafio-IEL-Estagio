@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using IelChallengeApi.Models;
-using IelChallengeApi.Services; // 1. Importa o nosso serviço
+using IelChallengeApi.Services;
 
 namespace IelChallengeApi.Controllers
 {

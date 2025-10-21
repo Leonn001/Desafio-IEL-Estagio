@@ -50,7 +50,7 @@ function App() {
     }
   };
 
-  const handleSaveEstudante = async (estudanteData) => {
+ const handleSaveEstudante = async (estudanteData) => {
     try {
       if (estudanteEmEdicao) {
         await axios.put(`${API_URL}/${estudanteEmEdicao.id}`, {
@@ -66,7 +66,14 @@ function App() {
 
     } catch (error) {
       console.error("Erro ao salvar estudante:", error);
-      alert("Erro ao salvar estudante. Verifique os dados e tente novamente.");
+
+      let errorMessage = "Erro ao salvar estudante. Verifique os dados e tente novamente.";
+
+      if (error.response && error.response.data && error.response.data.message) {
+          errorMessage = error.response.data.message;
+      }
+
+      alert(errorMessage);
     }
   };
 

@@ -1,7 +1,7 @@
 using IelChallengeApi.Data;
 using IelChallengeApi.Models;
-using IelChallengeApi.Services;
 using Microsoft.EntityFrameworkCore;
+using IelChallengeApi.Utils;
 
 namespace IelChallengeApi.Services
 {
@@ -37,6 +37,17 @@ namespace IelChallengeApi.Services
 
         public async Task<Estudante> CreateEstudanteAsync(Estudante estudante)
         {
+            if (string.IsNullOrWhiteSpace(estudante.Nome))
+                throw new InvalidOperationException("Informe um nome.");
+
+            if (string.IsNullOrWhiteSpace(estudante.CPF))
+                throw new InvalidOperationException("Informe um CPF.");
+
+            if (!CpfUtils.IsValid(estudante.CPF))
+            {
+                throw new InvalidOperationException("Informe um CPF válido.");
+            }
+            
             if (await _context.Estudantes.AnyAsync(e => e.CPF == estudante.CPF))
             {
                 throw new InvalidOperationException("Este CPF já está cadastrado.");
@@ -49,6 +60,12 @@ namespace IelChallengeApi.Services
 
         public async Task<bool> UpdateEstudanteAsync(int id, Estudante estudante)
         {
+
+            if (!CpfUtils.IsValid(estudante.CPF))
+            {
+                throw new InvalidOperationException("CPF inválido. Verifique os dígitos.");
+            }
+
             if (await _context.Estudantes.AnyAsync(e => e.CPF == estudante.CPF && e.Id != id))
             {
                 throw new InvalidOperationException("Este CPF já pertence a outro cadastro.");

@@ -8,14 +8,15 @@ O projeto atende a todos os requisitos solicitados:
 
 -   **Listagem de Estudantes:** A tela principal exibe uma tabela com todos os estudantes cadastrados.
 -   **Campo de Pesquisa:** Filtra a lista de estudantes em tempo real (via API) por nome, CPF ou endereço.
--   **Criação de Estudante (Botão "Novo"):** Abre um modal para cadastro, com validações de campos obrigatórios.
+-   **Criação e edição de estudantes** Abre um modal para cadastro e edições, com validações de campos obrigatórios.
 -   **Exclusão de Estudante:** Permite excluir um registro com uma janela de confirmação.
 -   **Base de Dados:** Utiliza PostgreSQL com Entity Framework Core (Code-First) para persistência.
+-   **Limite de caracteres:** Máximo de 100 caracteres para o campo Nome e 200 caracteres para o campo endereço.
 
 **Recursos Bônus (Diferenciais):**
 -   **Stack Moderna:** Uso de React (com Vite) no frontend e .NET 8 (API) no backend.
--   **Máscara de CPF:** Validação de formato de CPF (`000.000.000-00`) no formulário.
--   **Edição de Estudante:** A tabela permite editar um estudante existente, reutilizando o formulário.
+-   **Máscara e validação de CPF:** Validação do formato, duplicidade e validade matemática de CPF (`000.000.000-00`) no formulário.
+-   **Edição de Estudante:** A tabela permite editar um estudante existente, reutilizando o formulário (e as validações).
 -   **Arquitetura Limpa (API):** A API foi refatorada para usar uma **Camada de Serviço (Service Layer)**, separando a lógica de negócio dos Controllers (padrão SOLID).
 -   **Tratamento de Erros:** A API trata erros de negócio (ex: CPF duplicado) e retorna mensagens de erro amigáveis para o frontend.
 -   **UI Agradável:** Uso de Bootstrap para uma interface limpa, responsiva e com feedback visual (modais).
