@@ -45,7 +45,7 @@ O projeto atende a todos os requisitos solicitados:
 
 Você precisará de (Node.js, .NET 8 SDK e PostgreSQL) instalados.
 
-# Iniciando (Clonando o Repositório)
+Iniciando (Clonando o Repositório)
 
 Abra seu terminal.
 
