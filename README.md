@@ -45,7 +45,7 @@ O projeto atende a todos os requisitos solicitados:
 
 Você precisará de (Node.js, .NET 8 SDK e PostgreSQL) instalados.
 
-Iniciando (Clonando o Repositório)
+### 1. Iniciando (Clonando o Repositório)
 
 Abra seu terminal.
 
@@ -55,35 +55,33 @@ Clone este repositório para a sua máquina local:
     git clone https://github.com/Leonn001/Desafio-IEL-Estagio
  ```
 
-Este projeto usa o Entity Framework Core para migrações do banco de dados. Você **precisa** instalar a ferramenta de linha de comando do EF Core globalmente:
-
-```bash
-dotnet tool install --global dotnet-ef
-```
-
-### 1. Backend (API C#)
+### 2. Backend (API C#)
 
 A API roda na porta `http://localhost:5082`.
 
-1.  Navegue até a pasta `/backend`:
+1. Este projeto usa o Entity Framework Core para migrações do banco de dados. Você **precisa** instalar a ferramenta de linha de comando do EF Core globalmente:
+    ```bash
+    dotnet tool install --global dotnet-ef
+    ```
+2.  Navegue até a pasta `/backend`:
     ```bash
     cd backend
     ```
-2.  **Configuração do Banco:**
+3.  **Configuração do Banco:**
     -   Abra o arquivo `appsettings.json`.
     -   Altere a `DefaultConnection` para apontar para o seu servidor PostgreSQL, garantindo que o `Database=IelDb` exista (crie o banco de dados com o mesmo nome) e que a `Password` esteja correta.
-3.  **Criar o Banco de Dados:**
+4.  **Criar o Banco de Dados:**
     -   Rode o comando do EF Core para aplicar as *migrations* e criar as tabelas:
     ```bash
     dotnet ef database update
     ```
-4.  **Rodar a API:**
+5.  **Rodar a API:**
     ```bash
     dotnet run
     ```
-5.  A API estará rodando. Você pode acessar a documentação do Swagger em `http://localhost:5082/swagger`.
+6.  A API estará rodando. Você pode acessar a documentação do Swagger em `http://localhost:5082/swagger`.
 
-### 2. Frontend (React)
+### 3. Frontend (React)
 
 O frontend roda na porta `http://localhost:5173`.
 
