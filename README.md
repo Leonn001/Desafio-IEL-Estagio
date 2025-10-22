@@ -61,7 +61,7 @@ A API roda na porta `http://localhost:5082`.
     ```
 2.  **Configuração do Banco:**
     -   Abra o arquivo `appsettings.json`.
-    -   Altere a `DefaultConnection` para apontar para o seu servidor PostgreSQL, garantindo que o `Database=IelDb` exista e que a `Password` esteja correta.
+    -   Altere a `DefaultConnection` para apontar para o seu servidor PostgreSQL, garantindo que o `Database=IelDb` exista (crie o banco de dados com o mesmo nome) e que a `Password` esteja correta.
 3.  **Criar o Banco de Dados:**
     -   Rode o comando do EF Core para aplicar as *migrations* e criar as tabelas:
     ```bash
