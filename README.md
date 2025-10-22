@@ -1,6 +1,6 @@
 # Desafio de Estágio IEL - Gerenciamento de Estudantes
 
-Aplicação Full-Stack (C# e React) desenvolvida como solução para o teste prático de estágio na área de TI da FIEB/IEL.
+Aplicação Full-Stack (C# e React) desenvolvida como solução para o teste prático de estágio na área de TI da IEL.
 
 ## Funcionalidades Implementadas
 
