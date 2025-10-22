@@ -49,6 +49,7 @@ Este projeto usa o Entity Framework Core para migrações do banco de dados. Voc
 
 ```bash
 dotnet tool install --global dotnet-ef
+```
 
 ### 1. Backend (API C#)
 
