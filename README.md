@@ -45,6 +45,11 @@ O projeto atende a todos os requisitos solicitados:
 
 Você precisará de (Node.js, .NET 8 SDK e PostgreSQL) instalados.
 
+Este projeto usa o Entity Framework Core para migrações do banco de dados. Você **precisa** instalar a ferramenta de linha de comando do EF Core globalmente:
+
+```bash
+dotnet tool install --global dotnet-ef
+
 ### 1. Backend (API C#)
 
 A API roda na porta `http://localhost:5082`.
