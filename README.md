@@ -45,6 +45,16 @@ O projeto atende a todos os requisitos solicitados:
 
 Você precisará de (Node.js, .NET 8 SDK e PostgreSQL) instalados.
 
+# Iniciando (Clonando o Repositório)
+
+Abra seu terminal.
+
+Clone este repositório para a sua máquina local:
+
+ ```bash
+    git clone https://github.com/Leonn001/Desafio-IEL-Estagio
+ ```
+
 Este projeto usa o Entity Framework Core para migrações do banco de dados. Você **precisa** instalar a ferramenta de linha de comando do EF Core globalmente:
 
 ```bash
